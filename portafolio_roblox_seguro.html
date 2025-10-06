@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Portafolio de Scripts de Roblox — Seguro & Educativo</title>
-  <meta name="description" content="Portafolio y centro de recursos sobre scripting en Roblox (educativo, legal y ético)." />
+  <title>Portafolio de XRNL HUB </title>
+  <meta name="description" content="Portafolio y centro de recursos sobre scripting " />
   <style>
     :root{
       --bg:#0f1724; --card:#0b1220; --muted:#9aa4b2; --accent:#7c3aed; --glass: rgba(255,255,255,0.03);
@@ -31,8 +31,8 @@
   <div class="container">
     <header>
       <div>
-        <h1>Portafolio de Scripts - Educativo</h1>
-        <div class="toc">Recursos, tutoriales y ejemplos de scripting en Roblox (Lua) — legal y ético.</div>
+        <h1>Portafolio de Scripts</h1>
+        <div class="toc">Recursos, de scripting en Roblox </div>
       </div>
       <nav>
         <a href="#galeria">Galería</a>
@@ -45,81 +45,52 @@
 
     <section class="hero card" id="intro">
       <h2>Bienvenido — ¿Qué encontrarás aquí?</h2>
-      <p>Esta página es un portafolio y centro de recursos para desarrolladores de Roblox. Contiene ejemplos de scripts <strong>educativos</strong>, guías, snippets de optimización, herramientas legales (como generadores de assets), y artículos sobre seguridad y ética en scripting. <strong>No se distribuyen ni promueven hacks ni exploits.</strong></p>
+      <p>Esta página es un portafolio y centro de SCRIPTS <strong>educativos</strong>, guías, snippets de optimización, herramientas legales (como generadores de assets), y artículos sobre seguridad y ética en scripting. <strong>No se distribuyen ni promueven hacks ni exploits.</strong></p>
       <p><span class="badge">Legal & Ético</span> <span class="badge">Aprende Lua</span> <span class="badge">Buenas prácticas</span></p>
     </section>
 
 
     <section class="card" id="galeria">
-      <h2>Galería de Proyectos</h2>
-      <p>Proyectos de ejemplo y demos: cada proyecto incluye descripción, link a repositorio (si aplica) y snippets.</p>
+      <h2>SCRIPTS PARA ROBLOX </h2>
+      <p>NOTA: LOS SCRIPTS NO SON MIOS , CREDITOS A LOS CREADORES DE LOS SCRIPTS.</p>
       <div class="grid">
         <div class="card">
-          <h4>Proyecto: Plataforma de saltos</h4>
-          <p>Descripción: Un minijuego donde el jugador salta entre plataformas que se generan proceduralmente.</p>
-          <pre class="big-code"><code>-- ServerScript: Generador simple de plataformas
-local Workspace = game:GetService('Workspace')
-local template = Workspace.PlatformTemplate
-
-for i=1,20 do
-  local p = template:Clone()
-  p.Position = Vector3.new(i*12, math.random(5,20), 0)
-  p.Parent = Workspace
-end</code></pre>
+          <h4>Proyecto: BLUE LOCK RIVALS</h4>
+          <p>Descripción: SCRIPT DE BLUE LOCK RIVALS </p>
+          <pre class="big-code"><code>--XZuuyaX/XZuyaX: loadstring(game:HttpGet("https://raw.githubusercontent.com/XZuuyaX/XZuyaX-s-Hub/refs/heads/main/Main.Lua", true))()
+          SIN COOLDOWN: loadstring(game:HttpGet("https://raw.githubusercontent.com/Christianxddd/sincooldow-XRNLHUB/d6a179b41a8256e6d415ca16a5e7078a90a61a0d/main.lua", true))()
+Controll ball: loadstring(game:HttpGet("https://raw.githubusercontent.com/r4mpage4/LuaCom/refs/heads/main/ControlBall.rivals"))()</code></pre>
         </div>
         <div class="card">
-          <h4>Proyecto: Sistema de puntos</h4>
-          <p>Descripción: Sistema de recompensas y leaderstats usando DataStoreService (ejemplo seguro).</p>
-          <pre class="big-code"><code>-- ServerScript: Leaderstats seguro (simplificado)
-local Players = game:GetService('Players')
-
-Players.PlayerAdded:Connect(function(player)
-  local leaderstats = Instance.new('Folder')
-  leaderstats.Name = 'leaderstats'
-  leaderstats.Parent = player
-
-  local score = Instance.new('IntValue')
-  score.Name = 'Score'
-  score.Value = 0
-  score.Parent = leaderstats
-end</code></pre>
+          <h4>Proyecto: SERVIDOR PRIVADO FREE</h4>
+          <p>Descripción: Ten un servidor gratis y privado (Nota) Solo te puedes unir tu.</p>
+          <pre class="big-code"><code>--loadstring(game:HttpGet("https://pastebin.com/raw/Ru4UQDpN"))()
+          --loadstring(game:HttpGet("https://raw.githubusercontent.com/nootchad/Rbxservers/refs/heads/main/RbxserversScript.lua"))()</code></pre>
         </div>
       </div>
     </section>
 
 
     <section class="card" id="seguridad">
-      <h2>Buenas Prácticas y Seguridad</h2>
-      <p>Guía rápida para evitar errores comunes y proteger tu juego:</p>
+      <h2>INK GAME</h2>
+      <p>Nota:</p>
       <ul>
-        <li>No confíes en el cliente: valida acciones sensibles en el servidor.</li>
-        <li>Usa RemoteEvents y RemoteFunctions con cuidado y limita argumentos.</li>
-        <li>Protege tus DataStores con manejo de errores y backoff.</li>
-        <li>Evita exponer claves o APIs en código público.</li>
-        <li>Respeta las reglas de la plataforma y la ética de la comunidad.</li>
+        <li>EVITA SER GRABADO.</li>
+        <li>EVITAR MOLESTAR A LOS DEMAS.</li>
+        <li>RIESGO DE BAN.</li>
+        <li>ANTICHEAT 70%</li>
+        <li>USALO CONTROLADAMENTE.</li>
       </ul>
-      <h4>Ejemplo: Validación en servidor</h4>
-      <pre class="big-code"><code>-- ServerScript: Validación de salto (ejemplo)
-local Remote = game.ReplicatedStorage:WaitForChild('RequestJump')
-
-Remote.OnServerEvent:Connect(function(player, height)
-  -- Validar que la altura esté en rango permitido
-  if type(height) ~= 'number' or height < 1 or height > 50 then
-    return
-  end
-  -- Aplicar efecto solo si cumple
-  local humanoid = player.Character and player.Character:FindFirstChildOfClass('Humanoid')
-  if humanoid then
-    humanoid.JumpPower = height
-  end
-end)</code></pre>
+      <h4>SCRIPTS VARIOS</h4>
+      <pre class="big-code"><code>--RIN GTA: loadstring(game:HttpGet("https://raw.githubusercontent.com/wefwef127382/inkgames.github.io/refs/heads/main/ringta.lua"))()
+     --OTHER: loadstring(game:HttpGet("https://raw.githubusercontent.com/eikikrkr-ux/bypasok/refs/heads/main/ok"))()</code></pre>
     </section>
 
 
     <section class="card" id="blog">
-      <h2>Blog y Artículos</h2>
+      <h2>SCRIPTS OP (POPULAR) </h2>
       <article>
-        <h3>Cómo estructurar proyectos en Roblox Studio</h3>
+        <h3>EXPLOITS POPULARES DE ROBLOX</h3>
         <p>Resumen: Mantén los scripts organizados: ModuleScripts para lógica reutilizable, ServerScripts para lógica de servidor y LocalScripts para UI y entrada del usuario.</p>
       </article>
       <article>
@@ -131,52 +102,19 @@ end)</code></pre>
 
     <section class="card" id="tutorial-1">
       <div class="section-title">
-        <h3>Tutorial 1: Título del tutorial educativo</h3>
+        <h3>STEAL A BRAINLOT </h3>
         <a class="btn" href="#tutorial-1">Ver</a>
       </div>
-      <p>Descripción: Este tutorial explica conceptos seguros y legales de programación en Roblox Studio — por ejemplo, cómo crear una interfaz, cómo usar RemoteEvents correctamente, y cómo organizar código en ModuleScripts.</p>
+      <p>Script populares de roba un brainlot.</p>
       <div class="grid">
         <div class="card">
-          <h4>Snippet: Interfaz simple (LocalScript)</h4>
-          <div class="big-code"><pre><code>-- LocalScript: Mostrar mensaje al presionar una tecla
-local UserInputService = game:GetService('UserInputService')
-local player = game.Players.LocalPlayer
-local gui = player:WaitForChild('PlayerGui')
-
-UserInputService.InputBegan:Connect(function(input, gameProcessed)
-  if gameProcessed then return end
-  if input.KeyCode == Enum.KeyCode.F then
-    local screen = gui:FindFirstChild('ScreenGui')
-    if screen then
-      local label = screen:FindFirstChild('Label')
-      if label then
-        label.Text = '¡Hola, desarrollador!'
-        label.Visible = true
-        wait(2)
-        label.Visible = false
-      end
-    end
-  end
-end)</code></pre></div>
+          <h4>SCRIPT OP</h4>
+          <div class="big-code"><pre><code>-- Lennon hub: loadstring(game:HttpGet("https://pastefy.app/MJw2J4T6/raw"))() 
+          Lemon hub : loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/2341c827712daf923191e93377656f67.lua"))()</code></pre></div>
         </div>
         <div class="card">
-          <h4>Snippet: ModuleScript - Utilidades</h4>
-          <div class="big-code"><pre><code>-- ModuleScript: Utils
-local Utils = {}
-
-function Utils.clamp(val, min, max)
-  if val < min then return min end
-  if val > max then return max end
-  return val
-end
-
-function Utils.tween(obj, props, time)
-  local TweenService = game:GetService('TweenService')
-  local info = TweenInfo.new(time or 0.5, Enum.EasingStyle.Quad)
-  TweenService:Create(obj, info, props):Play()
-end
-
-return Utils</code></pre></div>
+          <h4>FLY V3 - Utilidades</h4>
+          <div class="big-code"><pre><code>-- loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()</code></pre></div>
         </div>
       </div>
       <p class="muted">Etiquetas: UI, ModuleScripts, LocalScripts</p>
